@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Demo page for CSS and JavaScript">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Demo Page - My Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="demos.html">Demos</a></li>
+				<li><a href="interests.html">Interests</a></li>
+				<li><a href="qualifications.html">Qualifications</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+		<h1 class="Demo-heading">Below are the demos of my work</h1>
+		<div id="flex-container">
+			<section>
+				<div class="grid-container">
+				<h2 class="grid-item1 Demo-heading">CSS Demo</h2>
+					<p class="grid-item2">This is my CSS demo for the Web Development and Operating 
+						below.</p>
+						<!-- source -- "./images" -->
+						<picture> 
+							<source media="(max-width:650px)" srcset="images/project2.png">
+							<img class="grid-item3" src="images/project.png" alt="Screenshot of CSS Demo">
+						</picture>
+					<div class="grid-item4"><a class="demo-tags"  href="cssdemo.html">View CSS Demo</a></div>
+				</div>
+			</section>
+			<section>
+				<div class="grid-container">
+				<h2 class="grid-item grid-item1 Demo-heading">JavaScript Demo</h2>
+					<p class="grid-item2">A JavaScript demo is coming soon. Check back later!</p>
+					<img class="grid-item grid-item3" src="images/placeholder.png" alt="Placeholder image">
+					<div class="grid-item grid-item4"><a class="demo-tags" href="holding.html">View Placeholder</a></div>
+				</div>
+			</section>
+		</div>
+	</main>
+</div>
+	<footer>
+		<div class="footer-content">
+			<p>Created by [Your Name], Student ID: [Your ID]. This is for an assignment at Staffordshire University Web
+				Dev and OS.</p>
+			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fexample.com%2Fdemos.html">HTML Validation
+				Results</a>
+		</div>
+	</footer>
+</body>
+
+</html>

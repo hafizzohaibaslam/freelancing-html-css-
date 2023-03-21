@@ -1,0 +1,462 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: navy;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0 2.2rem;
+}
+.header-content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.header-content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.header-content h2 {
+  font-size: 2rem;
+}
+.Anchors ul {
+  width: 80%;
+  margin: 0 auto;
+  background-color: navy;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+}
+.Anchors ul li {
+  list-style: none;
+}
+.Anchors ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+.about-me h2,
+.skills-hobbies h2,
+.call-to-action h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-me {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: wheat;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.skills-hobbies {
+  width: 80%;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: wheat;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.skills-hobbies ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skills-hobbies li {
+  background-color: #fff;
+  display: flex;
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.call-to-action {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: wheat;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+footer {
+  background-color: navy;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+footer div p a {
+  color: white;
+}
+
+/* Interests Page css */
+.interests-main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.interests-Para {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: wheat;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+/* I am using Id selector here */
+#interests-Para p {
+  text-align: justify;
+}
+footer div a {
+  color: #fff;
+}
+
+/* CSS SPECIFIC to DEMOS PAGE */
+.Demo-heading,
+.demo-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#flex-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: justify;
+}
+.grid-container {
+  /* min-width: 800px; */
+  min-height: 300px;
+  margin: 2rem auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header head"
+    "para Image"
+    "footer footer";
+
+  padding: 2rem;
+  background-color: wheat;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 17, 253, 0.2);
+}
+
+.grid-item1 {
+  grid-area: header;
+}
+.grid-item2 {
+  grid-area: para;
+}
+.grid-item3 {
+  grid-area: Image;
+  width: 250px;
+  height: 300px;
+  grid-row: 1/ span 2;
+}
+.grid-item4 {
+  grid-area: footer;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* CSS FOR QUALIFICATIONS PAGE */
+
+table {
+    border: 2px solid black;
+    width: 100%;
+  }
+
+  a {
+  color: #fff;
+}
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  td:first-child, th:first-child {
+    border-left: none;
+  }
+  
+  td:last-child, th:last-child {
+    border-right: none;
+  }
+  .Qua-Para{
+    width: 80%;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: wheat;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 17, 253, 0.2);
+
+  }
+.Qua-Languages,.Qua-subjects{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.2rem auto;
+}
+.Qua-Languages li,.Qua-subjects li{
+    list-style: none;
+}
+.qlf{
+  width: 200px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 769px) {
+
+  .Qua-Languages,.Qua-subjects{
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(179, 226, 248);
+    padding: 1rem;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 0.1rem 0;
+  }
+
+  .nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+  }
+  .nav-links a:hover {
+    border-bottom: #000000 solid 1px;
+  }
+
+  .header-content {
+    text-align: center;
+    padding-top: 12rem;
+  }
+  .Anchors ul {
+    flex-direction: column;
+    height: 100px;
+    background-color: rgb(179, 226, 248);
+    color: black;
+  }
+  .Anchors ul li a {
+    color: #000000;
+  }
+  /* css specific for the index/Home Page */
+  .header-content h1 {
+    font-size: 25px;
+  }
+  .header-content h2 {
+    font-size: 22px;
+  }
+  .about-me {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgb(245, 214, 245);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 17, 253, 0.2);
+  }
+
+  .skills-hobbies {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+  }
+
+  .skills-hobbies ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .skills-hobbies li {
+    margin: 1rem;
+    background-color: rgb(245, 214, 245);
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(247, 7, 215, 0.486);
+    text-align: center;
+    width: 9rem;
+    font-size: 1.1rem;
+  }
+
+  .call-to-action {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgb(245, 214, 245);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 17, 253, 0.2);
+    text-align: center;
+  }
+
+  .footer-content {
+    background-color: rgb(179, 226, 248);
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* Interests Page */
+  #interests-Para {
+    background-color: rgb(245, 214, 245);
+    box-shadow: 0 0.5rem 1rem rgba(0, 17, 253, 0.2);
+  }
+  /* Demos Page */
+  .Demo-heading {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  #grid-container {
+
+    height: fit-content;
+    min-width: auto;
+    margin: 2rem auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      "header"
+      "para"
+      "Image"
+      "footer";
+    padding: 2rem;
+    background-color: wheat;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 17, 253, 0.2);
+  }
+
+  .grid-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .grid-item{
+    display: flex;
+    width: 100%;
+  }
+  .grid-item p{
+    width: fit-content;
+  }
+  .grid-item1 {
+    grid-area: header;
+  }
+  .grid-item2 {
+    grid-area: para;
+  }
+  .grid-item3 {
+    grid-area: Image;
+  }
+  .grid-item4 {
+    grid-area: footer;
+  }
+}
